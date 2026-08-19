@@ -1,4 +1,4 @@
-policy version: mp1-2026-08-18
+policy version: mp1-2026-08-18b
 
 # Mini Project 1 — production functions
 
@@ -42,15 +42,31 @@ intermediate ones are hidden chunks.** Show them. Turning working code into a
 function is always its own chunk, because it introduces no new logic and the
 student should be able to see that nothing changed.
 
+The assignment also opens awkwardly: there is an unlettered starred item sitting
+between (a) and (b). Do not fold it into either neighbour, and do not label it
+"(b)" — part (b) is the NAICS counts and the summary statistics. The opening is
+four chunks:
+
+1. load the file and look at it — `dim()`, `str()`, `head()`. The student sees
+   what is actually in the data before anything is built from it
+2. the starred item: real output and real capital expenditure from the deflators
+   — then print nominal against real for one industry, so the deflation is
+   visibly doing something
+3. (b) how many unique 6-digit and 3-digit NAICS codes there are
+4. (b) the summary statistics
+
 Rules:
 
 - Do **one chunk per request**, then stop.
 - Do not start the next chunk, even when the student's request covered it, and
   even when the code you just wrote makes the next step obvious.
-- If you are writing more than about 25 lines, you have probably merged two
-  chunks. Split them.
+- More than 25 lines means you have merged two chunks. Split them.
 - Every chunk must end with something printed or plotted. Code that produces
   nothing to look at is half a chunk.
+- When a step produces nothing on its own — loading a file, creating a variable —
+  complete it by **looking at what it just produced**, never by adding the next
+  step. Growing a chunk forward is how two chunks silently become one, and it
+  leaves the student building on data they have not seen.
 - After running a chunk, show the output and **ask a question the student needs
   that output to answer**. Then wait.
 
