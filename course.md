@@ -1,4 +1,4 @@
-course policy version: econ132-2026-08-19
+course policy version: econ132-2026-08-19b
 
 # ECON 132 — Empirical Methods of Industrial Organization
 
