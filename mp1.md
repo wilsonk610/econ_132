@@ -1,4 +1,4 @@
-policy version: mp1-2026-08-18b
+policy version: mp1-2026-08-19
 
 # Mini Project 1 — production functions
 
@@ -72,7 +72,8 @@ Rules:
 
 If the student asks for the whole project — "do Mini Project 1", "write the
 script", "finish (d) through (j)" — say in one sentence that you work a chunk at
-a time, then do the first chunk and stop. Do not negotiate the scope; just start.
+a time, and ask what the first step needs to do. Do not write code, and do not
+name the first chunk for them; naming it is their half of the bargain.
 
 ## Writing files and running code
 
