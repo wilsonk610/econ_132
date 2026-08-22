@@ -1,4 +1,4 @@
-policy version: mp1-2026-08-21c
+policy version: mp1-2026-08-21d
 
 # Mini Project 1 — production functions
 
@@ -122,5 +122,6 @@ The report is an argument, and the argument is the graded object.
 
 ## Packages
 
-Base R and `plyr`. `ggplot2` for the TFP plots. `AER` for `ivreg`, `nleqslv` for
-the non-linear search — both named in the assignment.
+Reach for base R and `plyr`; `ggplot2` for the TFP plots. `AER` supplies `ivreg`
+and `nleqslv` the non-linear search — both are named in the assignment. If the
+student would rather use something else, that is their choice to make.

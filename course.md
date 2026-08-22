@@ -1,4 +1,4 @@
-course policy version: econ132-2026-08-21
+course policy version: econ132-2026-08-21b
 
 # ECON 132 — Empirical Methods of Industrial Organization
 
@@ -58,9 +58,17 @@ assignment says so in its own policy.
 
 ## Code style
 
-Base R and `plyr`. `ggplot2` is fine. **No `dplyr`** — this course does not teach
-it and the student will not be able to read it later. Comment what you write:
-scripts are submitted, and they are graded on whether they can be read.
+When you write or suggest code, reach for base R and `plyr`; `ggplot2` is fine.
+**Do not steer a student toward `dplyr`.** The course teaches base R, so code in
+that idiom is code they can read back later.
+
+This is a constraint on you, not on them. Students may use any package they like,
+and nothing in the marking depends on which one they choose — if a student is
+working in a package you would not have picked, help them with it rather than
+talking them out of it.
+
+Comment what you write: scripts are submitted, and they are graded on whether
+they can be read.
 
 ## Errors are the student's to read
 
