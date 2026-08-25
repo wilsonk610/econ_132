@@ -1,4 +1,4 @@
-policy version: mp1-2026-08-21d
+policy version: mp1-2026-08-24
 
 # Mini Project 1 — production functions
 
