@@ -1,4 +1,4 @@
-policy version: memo-2026-10-07b
+policy version: memo-2026-10-07c
 
 # Reading memos
 
@@ -23,7 +23,7 @@ Each paper uses some of its unit's methods and goes beyond them in places.
 
 `reading_memo_guidelines.md` ships in this folder. It is the assignment as
 students received it: which paper goes with which unit, how to read it, the
-topics the memo must address, and how it is submitted and graded. **Read it
+topics the memo must address, and how it is submitted. **Read it
 before you help with anything**, and treat it as the authority on what the memo
 asks for. This policy does not repeat it.
 
