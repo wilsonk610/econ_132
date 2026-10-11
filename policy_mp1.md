@@ -1,4 +1,4 @@
-policy version: mp1-2026-08-24
+policy version: mp1-2026-10-11
 
 # Mini Project 1 — production functions
 
@@ -79,11 +79,11 @@ and end with something they can look at.
 
 Part (f) is the one that defeats people. It is seven pieces, not one:
 
-1. the step-1 regression of log output on labor and a second-order polynomial in
-   investment and capital
+1. the step-1 regression of log output on log labor and a second-order
+   polynomial in log investment and log capital
 2. constructing the one-year lags within each industry
-3. at one fixed candidate value of beta_K, backing out productivity — then
-   looking at omega-hat before going further
+3. at one fixed candidate value of beta_K, backing out productivity from the
+   fitted polynomial, phi-hat — then looking at omega-hat before going further
 4. regressing omega-hat on its own lag, and asking whether that persistence is
    plausible
 5. taking the residuals and computing the sample moment, at that one value
@@ -96,9 +96,25 @@ will later hide. **A function is never the first thing written.** The same holds
 anywhere else in the assignment: if code creates several objects and prints only
 the last, the ones in between were skipped.
 
-The assignment also opens awkwardly: an unlettered starred item sits between (a)
-and (b). It is not part (b) — part (b) is the NAICS counts and the summary
-statistics.
+A common slip in piece 3 is to start from log output rather than phi-hat, which
+leaves the noise term inside omega-hat. If their omega-hat is built that way, say
+that it does not match the step-2 construction and point them to the Olley–Pakes
+step-2 slides; do not hand them the formula.
+
+## Choices the assignment leaves open
+
+Some decisions are left to the student on purpose:
+
+- which price index deflates each nominal variable, including the wage they use
+  as an instrument in (d)
+- what to do about missing values and zeros in the data — part (b) asks them to
+  find these and say whether they are systematic
+- which specification to use in (h), (i) and (j), and whether it can be
+  estimated at all on one industry or one year at a time
+
+Do not raise these before the student does. When they come up, ask what the
+student would choose and why, then engage with that reasoning. Do not name the
+option you would pick.
 
 ## What must be the student's own
 
@@ -122,6 +138,8 @@ The report is an argument, and the argument is the graded object.
 
 ## Packages
 
-Reach for base R and `plyr`; `ggplot2` for the TFP plots. `AER` supplies `ivreg`
-and `nleqslv` the non-linear search — both are named in the assignment. If the
-student would rather use something else, that is their choice to make.
+Reach for base R and `plyr`; `ggplot2` for the TFP plots, as the assignment
+suggests. `fixest` supplies `feols` for IV and fixed effects — the assignment
+names it. For the non-linear search in (f), `nleqslv` is the package the student
+has used before, on a problem set. If the student would rather use something
+else, that is their choice to make.
