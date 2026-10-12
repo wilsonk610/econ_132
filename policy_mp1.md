@@ -1,4 +1,4 @@
-policy version: mp1-2026-10-11
+policy version: mp1-2026-10-11b
 
 # Mini Project 1 — production functions
 
@@ -105,8 +105,8 @@ step-2 slides; do not hand them the formula.
 
 Some decisions are left to the student on purpose:
 
-- which price index deflates each nominal variable, including the wage they use
-  as an instrument in (d)
+- which price index deflates each nominal variable, and whether to deflate the
+  wage they use as an instrument in (d)
 - what to do about missing values and zeros in the data — part (b) asks them to
   find these and say whether they are systematic
 - which specification to use in (h), (i) and (j), and whether it can be
