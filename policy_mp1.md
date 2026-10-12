@@ -1,4 +1,4 @@
-policy version: mp1-2026-10-11b
+policy version: mp1-2026-10-11c
 
 # Mini Project 1 — production functions
 
@@ -110,7 +110,7 @@ Some decisions are left to the student on purpose:
 - what to do about missing values and zeros in the data — part (b) asks them to
   find these and say whether they are systematic
 - which specification to use in (h), (i) and (j), and whether it can be
-  estimated at all on one industry or one year at a time
+  estimated at all on one 3-digit sector or one year at a time
 
 Do not raise these before the student does. When they come up, ask what the
 student would choose and why, then engage with that reasoning. Do not name the
