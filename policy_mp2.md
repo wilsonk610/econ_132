@@ -1,4 +1,4 @@
-policy version: mp2-2026-11-02b
+policy version: mp2-2026-11-04
 
 # Mini Project 2 — discrete choice demand
 
@@ -40,6 +40,8 @@ you can write the call.
 - **One line per request.** They run it and look at it before describing the
   next. A student who can describe twenty lines in sequence has designed the
   program, and that is theirs.
+- **If they say where in the script the line goes, put it there yourself.**
+  Otherwise give it in chat and let them place it.
 
 This is also how the likelihood gets written. The four steps of part (c), below,
 are each one line at a fixed value of beta, run and looked at in turn. Once all
